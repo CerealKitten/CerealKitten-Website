@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    flex-flow: column;
+    top: 0;
+    width: 10vh;
+    height: 100vh;
+}
+
+.navicon {
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    position: absolute;
+    margin-top: -10vh;
+    height: 10vh;
+    width: 10vh;
+}
+
+.navbar a {
+    display: block;
+    color: #252525;
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    width: 10vh;
+    text-align: left;
+}
+
+.underlay {
+    display: flex;
+    position: relative;
+    margin: 0 0 0 -30vh;
+    background-color: #ddd;
+    color: #4f4f4f;
+    overflow: hidden;
+    width: 40vh;
+    height: 10vh;
+    transition: .5s ease;
+    flex-flow: row-reverse wrap;
+    justify-items: flex-end;
+    align-content: center;
+    opacity: 0;
+    border-radius: 1vh;
+  }
+
+.navtext {
+    font-family: sans-serif;
+    font-size: 3.5vh;
+    margin-right: 2vh;
+    color: white;
+}
+
+#home {
+    background-color: #cc99ff;
+}
+
+#about {
+    background-color: #acb9f6;
+}
+
+#design {
+    background-color: #99ccff;
+}
+
+#art {
+    background-color: #d2e8c6;
+}
+
+#craft {
+    background-color: #ffff99;
+}
+
+#current {
+    background-color: #ffe899;
+}
+
+#store {
+    background-color: #ffcc99;
+}
+
+#contact {
+    background-color: #ffb099;
+}
+
+#socials {
+    background-color: #ff9999;
+}
+
+#other {
+    background-color: #de9ec6;
+}
+
+.navitem:hover .underlay{
+    margin-left: 0vh;
+    opacity: .85;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#sideart {
+    position: absolute;
+    margin-left: 10vh;
+    height: 100vh;
+    width: 30vh;
+    background-color: greenyellow;
+}
