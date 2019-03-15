@@ -4,8 +4,9 @@
 }
 
 body {
+    width: 100vw;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
 }
 
 /*defines attributes for the sidenav bar*/
@@ -52,12 +53,15 @@ slider block*/
     opacity: .85;
 }
 
+/*defines the width of the navbar items and makes
+the position relative to prevent overlap*/
 .navitem {
     position: relative;
     width: 10vh;
-    background: green;
 }
 
+/*defines attributes for the text in the navbar
+slider blocks*/
 .navtext {
     font-family: sans-serif;
     color: white;
@@ -65,13 +69,90 @@ slider block*/
     font-size: 3.5vh;
 }
 
+/*adding some color to the backgrounds of the
+icons in the navbar*/
+#homeicon{
+    background: orange;
+}
+#abouticon{
+    background: red;
+}
+#designicon{
+    background: purple;
+}
+#articon{
+    background: blue;
+}
+#crafticon{
+    background: green;
+}
+#currenticon{
+    background: yellow;
+}
+#contacticon{
+    background: orange;
+}
+#socialsicon{
+    background: red;
+}
+#storeicon{
+    background: purple;
+}
+#othersicon{
+    background: blue;
+}
+
+/*reduces left  margin of slider block when mouse
+hovers over its containing navitem section*/
 .navitem:hover .slider {
     margin-left: 0vh;
 }
 
+/*moves the side art behind everything else. this
+is applied to the art on both sides*/
 .sideart {
     z-index: -2;
     position: relative;
     margin-left: 10vh;
-    max-width: 30vh;
+    position: relative;
+    width: 30vh;
+    align-items: center;
+}
+
+/*moves the second side art to the end of the
+body flex box*/
+#sideart2 {
+    position: relative;
+    margin-left: 0;
+    right: 0;
+    border: 0;
+    align-self: flex-end;
+}
+
+#page {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+}
+
+#page * {
+    margin-bottom: 5vh;
+}
+
+/*places the logo where it needs to be and sets
+the proper dimensions*/
+#logoOverlay {
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+    align-self: center;
+    background: url(https://www.instagram.com/p/BozFfZRgO66/media/?size=l);
+    background-size: 90vh 90vh;
+    background-repeat: no-repeat;
+}
+
+#about {
+    width: 110vh;
+    background: gray;
 }
