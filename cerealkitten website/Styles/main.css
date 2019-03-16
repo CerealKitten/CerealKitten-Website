@@ -136,10 +136,6 @@ body flex box*/
     align-items: center;
 }
 
-#page * {
-    margin-bottom: 5vh;
-}
-
 /*places the logo where it needs to be and sets
 the proper dimensions*/
 #logoOverlay {
@@ -152,7 +148,74 @@ the proper dimensions*/
     background-repeat: no-repeat;
 }
 
+h1 {
+    margin-bottom: 3vh;
+}
+
+h2 {
+    margin-bottom: 2vh;
+}
+
+p {
+    margin-bottom: 1vh;
+}
+
+.sectbreak {
+    display: block;
+    overflow: hidden;
+    width: 110vh;
+    max-height: 10vh;
+    background-color: yellow;
+    margin: 1vh 0;
+    align-content: space-around
+}
+
 #about {
+    width: 110vh;
+    background: gray;
+}
+
+#gallery {
+    width: 110vh;
+    background: gray;
+}
+
+#design {
+    width: 110vh;
+    background: gray;
+}
+
+#art {
+    width: 110vh;
+    background: gray;
+}
+
+#craft {
+    width: 110vh;
+    background: gray;
+}
+
+#current {
+    width: 110vh;
+    background: gray;
+}
+
+#contact {
+    width: 110vh;
+    background: gray;
+}
+
+#socials {
+    width: 110vh;
+    background: gray;
+}
+
+#store {
+    width: 110vh;
+    background: gray;
+}
+
+#others {
     width: 110vh;
     background: gray;
 }
