@@ -170,52 +170,69 @@ p {
     align-content: space-around
 }
 
+.pics {
+    display: block;
+    width: 49vh;
+    height: 49vh;
+    background-color: orange;
+}
+
+.descriptorcard {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 5vh;
+    justify-content: space-between
+}
+
+p{
+    color: #303030;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+.descriptorcard p {
+    width: 55vh;
+    font-size: 2.5vh;
+}
+
 #about {
     width: 110vh;
-    background: gray;
+    justify-content: center;
+    
 }
 
 #gallery {
     width: 110vh;
-    background: gray;
 }
 
 #design {
     width: 110vh;
-    background: gray;
 }
 
 #art {
     width: 110vh;
-    background: gray;
 }
 
 #craft {
     width: 110vh;
-    background: gray;
 }
 
 #current {
     width: 110vh;
-    background: gray;
 }
 
 #contact {
     width: 110vh;
-    background: gray;
 }
 
 #socials {
     width: 110vh;
-    background: gray;
 }
 
 #store {
     width: 110vh;
-    background: gray;
 }
 
 #others {
     width: 110vh;
-    background: gray;
 }
