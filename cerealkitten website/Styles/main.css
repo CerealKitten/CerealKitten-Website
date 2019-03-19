@@ -166,12 +166,12 @@ p {
     width: 110vh;
     max-height: 10vh;
     background-color: yellow;
-    margin: 1vh 0;
     align-content: space-around
 }
 
 .pics {
     display: block;
+    margin: 0 1vh;
     width: 49vh;
     height: 49vh;
     background-color: orange;
@@ -181,7 +181,7 @@ p {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 5vh;
-    justify-content: space-between
+    justify-content: space-around;
 }
 
 p{
