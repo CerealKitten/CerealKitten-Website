@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*defines attributes for the sidenav bar*/
+#sidenav {
+    height: 100%;
+    width: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*brings sidenav items forward (above everything)
+and gets rid of text decoration as well as adds
+display type setting fixed dimensions*/
+#sidenav a {
+    z-index: 1;
+    text-decoration: none;
+    display: block;
+    color: black;
+    height: 10vh;
+    width: 10vh;;
+}
+
+/*pushes slider behind the sidenav items and 
+displays it offscreen so it can slide in later.
+applys flex display to make text appear at the
+end of the block instead of the beginning.
+aligns to center vertically and sets the 
+transition attributes. Defines dimensions of the
+slider block*/
+.slider {
+    z-index: -1;
+    position: absolute;
+    margin-top: -10vh;
+    margin-left: -40vh;
+    height: 10vh;
+    width: 40vh;
+    background-color: #aaa;
+    transition: .5s ease;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: .85;
+}
+
+/*defines the width of the navbar items and makes
+the position relative to prevent overlap*/
+.navitem {
+    position: relative;
+    width: 10vh;
+}
+
+/*defines attributes for the text in the navbar
+slider blocks*/
+.navtext {
+    font-family: sans-serif;
+    color: white;
+    margin-right: 2vh;
+    font-size: 3.5vh;
+}
+
+/*adding some color to the backgrounds of the
+icons in the navbar*/
+#homeicon{
+    background: orange;
+}
+#abouticon{
+    background: red;
+}
+#designicon{
+    background: purple;
+}
+#articon{
+    background: blue;
+}
+#crafticon{
+    background: green;
+}
+#currenticon{
+    background: yellow;
+}
+#contacticon{
+    background: orange;
+}
+#socialsicon{
+    background: red;
+}
+#storeicon{
+    background: purple;
+}
+#othersicon{
+    background: blue;
+}
+
+/*reduces left  margin of slider block when mouse
+hovers over its containing navitem section*/
+.navitem:hover .slider {
+    margin-left: 0vh;
+}
