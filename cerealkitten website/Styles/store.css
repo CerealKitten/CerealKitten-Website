@@ -74,31 +74,31 @@ icons in the navbar*/
 #homeicon{
     background: orange;
 }
-#abouticon{
+#graphicicon{
     background: red;
 }
-#designicon{
+#wallicon{
     background: purple;
 }
-#articon{
+#stationeryicon{
     background: blue;
 }
-#crafticon{
+#clotheicon{
     background: green;
 }
-#currenticon{
+#collecticon{
     background: yellow;
 }
-#contacticon{
+#furnishicon{
     background: orange;
 }
-#socialsicon{
+#carticon{
     background: red;
 }
-#storeicon{
+#contacticon{
     background: purple;
 }
-#othersicon{
+#closericon{
     background: blue;
 }
 
@@ -106,4 +106,32 @@ icons in the navbar*/
 hovers over its containing navitem section*/
 .navitem:hover .slider {
     margin-left: 0vh;
+}
+
+#page {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+}
+
+/*moves the side art behind everything else. this
+is applied to the art on both sides*/
+.sideart {
+    z-index: -2;
+    position: relative;
+    margin-left: 10vh;
+    position: relative;
+    width: 30vh;
+    align-items: center;
+}
+
+/*moves the second side art to the end of the
+body flex box*/
+#sideart2 {
+    position: relative;
+    margin-left: 0;
+    right: 0;
+    border: 0;
+    align-self: flex-end;
 }

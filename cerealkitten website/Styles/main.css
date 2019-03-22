@@ -156,10 +156,6 @@ h2 {
     margin-bottom: 2vh;
 }
 
-p {
-    margin-bottom: 1vh;
-}
-
 .sectbreak {
     display: block;
     overflow: hidden;
@@ -184,10 +180,15 @@ p {
     justify-content: space-around;
 }
 
-p{
+p {
+    margin-bottom: 1vh;
     color: #303030;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .descriptorcard p {
@@ -235,4 +236,17 @@ p{
 
 #others {
     width: 110vh;
+}
+
+.button {
+    max-width: 10vh;
+    display: flex;
+    margin: 1.5vh 0;
+    padding: 1.5vh 4vh;
+    background-color: gray;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    border-radius: .75vh;
 }
