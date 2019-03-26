@@ -51,6 +51,8 @@ slider block*/
     justify-content: flex-end;
     align-items: center;
     opacity: .85;
+    border-top-right-radius: .75vh;
+    border-bottom-right-radius: .75vh;
 }
 
 /*defines the width of the navbar items and makes
@@ -67,6 +69,11 @@ slider blocks*/
     color: white;
     margin-right: 2vh;
     font-size: 3.5vh;
+}
+
+.image {
+    border-top-right-radius: .75vh;
+    border-bottom-right-radius: .75vh;
 }
 
 /*adding some color to the backgrounds of the
@@ -173,7 +180,7 @@ h2 {
     background-color: orange;
 }
 
-.descriptorcard {
+.card {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 5vh;
@@ -191,7 +198,11 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.descriptorcard p {
+img {
+    max-width: 100%;
+}
+
+.card p {
     width: 55vh;
     font-size: 2.5vh;
 }
